@@ -31,7 +31,7 @@ export default {
                 quantity: Number(this.quantity),
                 price: this.stock.price
             }
-            console.log(order)
+            this.$store.dispatch('buyStock', order)
             this.quantity = 0
         }
     }
