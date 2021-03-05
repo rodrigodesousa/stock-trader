@@ -1,14 +1,21 @@
 <template>
   <div id="app" class="container">
-    <router-view></router-view>
+    <Header></Header>
+    <div class="row">
+      <div class="col-xs-12">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
 
 export default {
   name: 'App',
   components: {
+    Header
   }
 }
 </script>
@@ -20,6 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 </style>
